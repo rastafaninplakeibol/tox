@@ -21,23 +21,23 @@ tox_binary_io = { version = "0.2.0", path = "../tox_binary_io" }
 tox_crypto = { version = "0.2.0", path = "../tox_crypto" }
 tox_packet = { version = "0.2.0", path = "../tox_packet" }
 
-bytes = "1.4"
+bytes = "1.7"
 futures = { version = "0.3", default-features = false, features = ["std", "async-await"] }
 log = "0.4"
 nom = "7.1"
 cookie-factory = "0.3"
 get_if_addrs = "0.5"
 thiserror = "1.0"
-lru = "0.10"
-bitflags = "2.2"
-itertools = "0.10"
+lru = "0.12.5"
+bitflags = "2.6"
+itertools = "0.13.0"
 rand = "0.8"
 sha2 = "0.10"
 xsalsa20poly1305 = "0.9"
-crypto_box = "0.8"
+crypto_box = "0.9.1"
 
 [dependencies.tokio]
-version = "1.28"
+version = "1.40"
 default-features = false
 features = ["net", "sync", "time"]
 
@@ -46,6 +46,6 @@ version = "0.7"
 features = ["codec", "net"]
 
 [dev-dependencies.tokio]
-version = "1.28"
+version = "1.40"
 default-features = false
 features = ["macros", "test-util", "net", "rt", "rt-multi-thread", "sync", "time"]

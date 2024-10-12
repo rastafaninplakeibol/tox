@@ -12,10 +12,10 @@ use std::{
     net::{IpAddr, Ipv4Addr, Ipv6Addr},
 };
 
-#[cfg(feature = "crypto")]
-pub use crypto::*;
-#[cfg(feature = "crypto")]
-mod crypto;
+//#[cfg(feature = "crypto")]
+//pub use crypto::*;
+//#[cfg(feature = "crypto")]
+//mod crypto;
 
 /// The trait provides method to deserialize struct from raw bytes
 pub trait FromBytes: Sized {

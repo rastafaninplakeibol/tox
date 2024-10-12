@@ -24,11 +24,11 @@ tox_crypto = { version = "0.2.0", path = "../tox_crypto" }
 
 nom = "7.1"
 cookie-factory = "0.3"
-bitflags = "2.2"
+bitflags = "2.6"
 thiserror = "1.0"
 sha2 = "0.10"
 xsalsa20poly1305 = "0.9"
 # for enabling rand_core feature
 aead = { version = "0.5", features = ["rand_core"] }
 rand = "0.8"
-crypto_box = "0.8"
+crypto_box = "0.9.1"

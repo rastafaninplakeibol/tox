@@ -35,29 +35,29 @@ maintainer-scripts = "dpkg/info"
 
 
 [dependencies]
-clap = { version = "4.2", features = ["cargo", "env"] }
-env_logger = "0.10"
+clap = { version = "4.5", features = ["cargo", "env"] }
+env_logger = "0.11.5"
 anyhow = "1.0"
 futures = { version = "0.3", default-features = false, features = ["std", "async-await"] }
 hex = "0.4"
-itertools = "0.10"
+itertools = "0.13.0"
 log = "0.4"
 serde = { version = "1.0", features = ["derive"] }
 serde_yaml = "0.9"
-crypto_box = "0.8"
+crypto_box = "0.9.1"
 rand = "0.8"
 time = { version = "0.3", features = ["serde-well-known"] }
 tox = { version = "0.2.0", path = "../tox" }
 
 [dependencies.config]
-version = "0.13"
+version = "0.14.0"
 default-features = false
 features = ["yaml"]
 
 [dependencies.tokio]
-version = "1.28"
+version = "1.40"
 default-features = false
 features = ["net", "time", "rt", "rt-multi-thread"]
 
 [target.'cfg(unix)'.dependencies]
-syslog = "6.1"
+syslog = "7.0.0"
